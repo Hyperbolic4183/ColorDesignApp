@@ -17,6 +17,7 @@
 		4753F7A12473B38400564746 /* 5R.json in Resources */ = {isa = PBXBuildFile; fileRef = 4753F7A02473B38400564746 /* 5R.json */; };
 		4753F7A62473B45300564746 /* jsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753F7A52473B45300564746 /* jsonData.swift */; };
 		4753F7A82473B4C900564746 /* colorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753F7A72473B4C900564746 /* colorData.swift */; };
+		4753F7AA2473B92400564746 /* ColorCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753F7A92473B92400564746 /* ColorCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4753F7A02473B38400564746 /* 5R.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 5R.json; sourceTree = "<group>"; };
 		4753F7A52473B45300564746 /* jsonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonData.swift; sourceTree = "<group>"; };
 		4753F7A72473B4C900564746 /* colorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorData.swift; sourceTree = "<group>"; };
+		4753F7A92473B92400564746 /* ColorCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4753F7892473B1FB00564746 /* AppDelegate.swift */,
 				4753F78B2473B1FB00564746 /* SceneDelegate.swift */,
 				4753F78D2473B1FB00564746 /* ContentView.swift */,
+				4753F7A92473B92400564746 /* ColorCellView.swift */,
 				4753F78F2473B1FE00564746 /* Assets.xcassets */,
 				4753F7942473B1FE00564746 /* LaunchScreen.storyboard */,
 				4753F7972473B1FE00564746 /* Info.plist */,
@@ -181,6 +184,7 @@
 				4753F78C2473B1FB00564746 /* SceneDelegate.swift in Sources */,
 				4753F7A82473B4C900564746 /* colorData.swift in Sources */,
 				4753F78E2473B1FB00564746 /* ContentView.swift in Sources */,
+				4753F7AA2473B92400564746 /* ColorCellView.swift in Sources */,
 				4753F7A62473B45300564746 /* jsonData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
