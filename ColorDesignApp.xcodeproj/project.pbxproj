@@ -13,6 +13,10 @@
 		4753F7902473B1FE00564746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4753F78F2473B1FE00564746 /* Assets.xcassets */; };
 		4753F7932473B1FE00564746 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4753F7922473B1FE00564746 /* Preview Assets.xcassets */; };
 		4753F7962473B1FE00564746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4753F7942473B1FE00564746 /* LaunchScreen.storyboard */; };
+		4753F79F2473B29C00564746 /* R.json in Resources */ = {isa = PBXBuildFile; fileRef = 4753F79E2473B29C00564746 /* R.json */; };
+		4753F7A12473B38400564746 /* 5R.json in Resources */ = {isa = PBXBuildFile; fileRef = 4753F7A02473B38400564746 /* 5R.json */; };
+		4753F7A62473B45300564746 /* jsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753F7A52473B45300564746 /* jsonData.swift */; };
+		4753F7A82473B4C900564746 /* colorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753F7A72473B4C900564746 /* colorData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		4753F7922473B1FE00564746 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4753F7952473B1FE00564746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4753F7972473B1FE00564746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4753F79E2473B29C00564746 /* R.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = R.json; sourceTree = "<group>"; };
+		4753F7A02473B38400564746 /* 5R.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 5R.json; sourceTree = "<group>"; };
+		4753F7A52473B45300564746 /* jsonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonData.swift; sourceTree = "<group>"; };
+		4753F7A72473B4C900564746 /* colorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				4753F7882473B1FB00564746 /* ColorDesignApp */,
-				4753F7872473B1FB00564746 /* Products */,
+				4753F79D2473B23A00564746 /* Resouce */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,11 +59,13 @@
 				4753F7862473B1FB00564746 /* ColorDesignApp.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4753F7882473B1FB00564746 /* ColorDesignApp */ = {
 			isa = PBXGroup;
 			children = (
+				4753F7A22473B41500564746 /* Control */,
 				4753F7892473B1FB00564746 /* AppDelegate.swift */,
 				4753F78B2473B1FB00564746 /* SceneDelegate.swift */,
 				4753F78D2473B1FB00564746 /* ContentView.swift */,
@@ -73,6 +83,25 @@
 				4753F7922473B1FE00564746 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4753F79D2473B23A00564746 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				4753F7A52473B45300564746 /* jsonData.swift */,
+				4753F7A72473B4C900564746 /* colorData.swift */,
+				4753F79E2473B29C00564746 /* R.json */,
+				4753F7A02473B38400564746 /* 5R.json */,
+				4753F7872473B1FB00564746 /* Products */,
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		4753F7A22473B41500564746 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4753F79F2473B29C00564746 /* R.json in Resources */,
 				4753F7962473B1FE00564746 /* LaunchScreen.storyboard in Resources */,
 				4753F7932473B1FE00564746 /* Preview Assets.xcassets in Resources */,
+				4753F7A12473B38400564746 /* 5R.json in Resources */,
 				4753F7902473B1FE00564746 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +179,9 @@
 			files = (
 				4753F78A2473B1FB00564746 /* AppDelegate.swift in Sources */,
 				4753F78C2473B1FB00564746 /* SceneDelegate.swift in Sources */,
+				4753F7A82473B4C900564746 /* colorData.swift in Sources */,
 				4753F78E2473B1FB00564746 /* ContentView.swift in Sources */,
+				4753F7A62473B45300564746 /* jsonData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
