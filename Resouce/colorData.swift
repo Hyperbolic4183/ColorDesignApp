@@ -10,6 +10,13 @@ import SwiftUI
 import UIKit
 
 let ColorDataR: [colorData] = load("R.json")
+let ColorDataYR: [colorData] = load("YR.json")
+let ColorDataY: [colorData] = load("Y.json")
+let ColorDataGY: [colorData] = load("GY.json")
+let ColorDataG: [colorData] = load("G.json")
+let ColorDataBG: [colorData] = load("BG.json")
+let ColorDataB: [colorData] = load("B.json")
+let ColorDataPB: [colorData] = load("PB.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
@@ -63,5 +70,11 @@ final class ImageStore {
         
         images[name] = ImageStore.loadImage(name: name)
         return images.index(forKey: name)!
+    }
+}
+
+struct colorData_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }

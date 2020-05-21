@@ -17,7 +17,7 @@ struct Home: View {
                 .font(.headline)
                 .padding(.leading, 15)
                 .padding(.top, 5)
-            
+
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(self.items) { colordata in
@@ -47,7 +47,8 @@ struct CategoryItem: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home(categoryName: ColorDataR[0].name, items: Array(ColorDataR.prefix(3)))
+        Home(categoryName: ColorDataY[3].name, items: Array(ColorDataY.prefix(4)))
+        
     }
 }
 

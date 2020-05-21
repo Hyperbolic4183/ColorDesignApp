@@ -170,10 +170,10 @@ extension UIColor {
 struct ColorCellView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ColorCellView(colorData: ColorDataR[0])
+            ColorCellView(colorData: ColorDataBG[0])
                 .previewLayout(.fixed(width: 350, height: 600))
         
-        ColorCellView(colorData: ColorDataR[1])
+        ColorCellView(colorData: ColorDataY[3])
         .previewLayout(.fixed(width: 350, height: 600))
         }
     }
