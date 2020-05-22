@@ -5,7 +5,7 @@
 //  Created by 大塚周 on 2020/05/16.
 //  Copyright © 2020 大塚周. All rights reserved.
 //
-
+import Foundation
 import SwiftUI
 import UIKit
 
@@ -22,8 +22,8 @@ func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-        else {
-            fatalError("Couldn't find \(filename) in main bundle.")
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
     }
     
     do {
@@ -73,8 +73,4 @@ final class ImageStore {
     }
 }
 
-struct colorData_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}
+

@@ -9,24 +9,26 @@
 import SwiftUI
 
 struct ColorCellView: View {
-    
+    @EnvironmentObject var testdata: testData
     var colorData: colorData
     var body: some View {
         VStack {
             HStack {
                 
-
+                
                 VStack(spacing: 5.0) {
 
                     Spacer()
 
                         ForEach(0..<self.colorData.v9.count){ j in
+                        NavigationLink(destination: test1() ){
                         Button(" ", action: {
+                            
                             print("tapped")
                         })
                             .frame(width: 30, height: 50)
                             .background(Color.init(UIColor(self.colorData.v9[j][0],self.colorData.v9[j][1],self.colorData.v9[j][2])))
-
+                    }
                 }
 
             }
@@ -169,13 +171,10 @@ extension UIColor {
 
 struct ColorCellView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ColorCellView(colorData: ColorDataBG[0])
-                .previewLayout(.fixed(width: 350, height: 600))
-        
-        ColorCellView(colorData: ColorDataY[3])
-        .previewLayout(.fixed(width: 350, height: 600))
-        }
+        let data = testData()
+        return ColorCellView(colorData: data.testdata[2])
+        .environmentObject(data)
+
     }
 }
 

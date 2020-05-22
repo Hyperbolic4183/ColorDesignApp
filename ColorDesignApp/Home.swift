@@ -11,6 +11,7 @@ import SwiftUI
 struct Home: View {
     var categoryName: String
     var items: [colorData]
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text(self.categoryName)
@@ -21,33 +22,46 @@ struct Home: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(self.items) { colordata in
-                        CategoryItem(colorData: colordata)
+                        NavigationLink(
+                            destination: ColorCellView(colorData: colordata)
+                        ) {
+                            CategoryItem(colorData: colordata)
                     }
+                    .buttonStyle(PlainButtonStyle())
                 }
             }
-            .frame(height: 185)
+            
         }
+            .frame(height: 185)
     }
 }
-
+}
 struct CategoryItem: View {
     var colorData: colorData
     var body: some View {
         VStack(alignment: .leading) {
             colorData.image
             .resizable()
-                .frame(width: 155, height: 155)
+            .frame(width: 155, height: 155)
             .cornerRadius(5)
             Text(colorData.name)
+                .foregroundColor(.primary)
                 .font(.caption)
         }
         .padding(.leading, 15)
     }
 }
 
+struct secondView: View {
+    var body: some View {
+        Text("hello")
+    }
+}
+
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home(categoryName: ColorDataY[3].name, items: Array(ColorDataY.prefix(4)))
+        Home(categoryName: ColorDataR[0].name, items: Array(ColorDataR.prefix(4)))
+        .environmentObject(testData())
         
     }
 }
