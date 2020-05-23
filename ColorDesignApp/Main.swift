@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct Main: View {
+    @EnvironmentObject var observedrgb: ObservedRGB
     var body: some View {
         NavigationView {
         ScrollView(.vertical) {
@@ -27,7 +28,7 @@ struct Main: View {
 
 struct Main_Previews: PreviewProvider {
     static var previews: some View {
-        Main()
+        Main().environmentObject(ObservedRGB())
         
     }
 }

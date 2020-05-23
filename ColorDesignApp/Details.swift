@@ -9,13 +9,20 @@
 import SwiftUI
 
 struct Details: View {
+    @EnvironmentObject var observedrgb: ObservedRGB
     var body: some View {
-        Text("Hello World")
+        VStack {
+            Text("a")
+            Text("Hello World")
+            Text("\(self.observedrgb.red)")
+            Text("\(self.observedrgb.green)")
+            Text("\(self.observedrgb.blue)")
+        }
     }
 }
 
 struct Details_Previews: PreviewProvider {
     static var previews: some View {
-        Details()
+        Details().environmentObject(ObservedRGB())
     }
 }
