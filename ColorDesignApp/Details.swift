@@ -11,12 +11,20 @@ import SwiftUI
 struct Details: View {
     @EnvironmentObject var observedrgb: ObservedRGB
     var body: some View {
+        GeometryReader{ bodyView in
         VStack {
-            Text("a")
-            Text("Hello World")
-            Text("\(self.observedrgb.red)")
-            Text("\(self.observedrgb.green)")
-            Text("\(self.observedrgb.blue)")
+            
+            Text("")
+                .frame(width: bodyView.size.width, height: bodyView.size.width)
+                .background(Color.init(UIColor(self.observedrgb.red,self.observedrgb.green,self.observedrgb.blue)))
+            
+            HStack {
+                Text("R値は\(self.observedrgb.red)")
+            
+            Text("G値は\(self.observedrgb.green)")
+            Text("B値は\(self.observedrgb.blue)")
+              }
+            }
         }
     }
 }
