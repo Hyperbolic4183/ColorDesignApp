@@ -13,28 +13,32 @@ struct Home: View {
     var items: [colorData]
     
     var body: some View {
+       NavigationView {
         VStack(alignment: .leading) {
+            
             Text(self.categoryName)
                 .font(.headline)
                 .padding(.leading, 15)
                 .padding(.top, 5)
-
+            
             ScrollView(.horizontal, showsIndicators: false) {
+                 
                 HStack(alignment: .top, spacing: 0) {
+                    NavigationLink(destination: test11()){
                     ForEach(self.items) { colordata in
-                        NavigationLink(
-                            destination: ColorCellView(colorData: colordata)
-                        ) {
+                        
                             CategoryItem(colorData: colordata)
-                    }
-                    .buttonStyle(PlainButtonStyle())
+                    
+                    
                 }
             }
-            
+               .buttonStyle(PlainButtonStyle())
         }
             .frame(height: 185)
     }
 }
+}
+    }
 }
 struct CategoryItem: View {
     var colorData: colorData
@@ -61,7 +65,7 @@ struct secondView: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home(categoryName: ColorDataR[0].name, items: Array(ColorDataR.prefix(4)))
-        .environmentObject(testData())
+        
         
     }
 }

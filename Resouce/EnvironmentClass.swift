@@ -8,12 +8,11 @@
 
 import SwiftUI
 
-class ObservedNumber: ObservableObject {
-    @Published var number1 = ""
-}
-
 class ObservedRGB: ObservableObject {
     @Published var red = 0
     @Published var green = 0
     @Published var blue = 0
+    @Published var rgbArray: [[Int]] = []
 }
+
+
