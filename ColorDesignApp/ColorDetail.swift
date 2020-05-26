@@ -12,12 +12,21 @@ struct ColorDetail: View {
     var r:Int
     var g:Int
     var b:Int
+    @EnvironmentObject var favoriteArray: ObservedRGB
     var body: some View {
         GeometryReader{ bodyView in
         VStack {
              Text("")
            .frame(width: bodyView.size.width, height: bodyView.size.width)
                 .background(Color.init(UIColor(self.r,self.g,self.b)))
+            Text("R値は\(self.r)G値は\(self.g)B値は\(self.b)")
+            Button(action: {
+                print("tapped")
+                
+                self.favoriteArray.rgbArray.append([self.r,self.g,self.b])
+            }){
+                Text("保存する")
+            }
         }
         }
     }
@@ -42,7 +51,8 @@ extension UIColor {
 }
 
 struct ColorDetail_Previews: PreviewProvider {
+    static let favoriteArray = ObservedRGB()
     static var previews: some View {
-        ColorDetail(r: 3,g:12,b:21)
+        ColorDetail(r: 3,g:12,b:21).environmentObject(favoriteArray)
     }
 }

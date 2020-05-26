@@ -9,10 +9,8 @@
 import SwiftUI
 
 class ObservedRGB: ObservableObject {
-    @Published var red = 0
-    @Published var green = 0
-    @Published var blue = 0
-    @Published var rgbArray: [[Int]] = []
+ 
+    @Published var rgbArray = [[Int]]()
 }
 
 
