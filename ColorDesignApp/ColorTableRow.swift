@@ -8,12 +8,12 @@
 
 import SwiftUI
 
-struct Home: View {
+struct ColorTableRow: View {
     var categoryName: String
     var items: [colorData]
     
     var body: some View {
-       NavigationView {
+       
         VStack(alignment: .leading) {
             
             Text(self.categoryName)
@@ -24,19 +24,19 @@ struct Home: View {
             ScrollView(.horizontal, showsIndicators: false) {
                  
                 HStack(alignment: .top, spacing: 0) {
-                    NavigationLink(destination: test11()){
+                    
                     ForEach(self.items) { colordata in
-                        
+                        NavigationLink(destination: MunsellColorTable(colorData: colordata)){
                             CategoryItem(colorData: colordata)
                     
-                    
-                }
+                        }
+                
             }
                .buttonStyle(PlainButtonStyle())
         }
             .frame(height: 185)
     }
-}
+
 }
     }
 }
@@ -62,9 +62,9 @@ struct secondView: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct ColorTableRow_Previews: PreviewProvider {
     static var previews: some View {
-        Home(categoryName: ColorDataR[0].name, items: Array(ColorDataR.prefix(4)))
+        ColorTableRow(categoryName: ColorDataR[0].name, items: Array(ColorDataG.prefix(4)))
         
         
     }

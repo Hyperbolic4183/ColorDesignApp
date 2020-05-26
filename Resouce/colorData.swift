@@ -18,6 +18,10 @@ let ColorDataBG: [colorData] = load("BG.json")
 let ColorDataB: [colorData] = load("B.json")
 let ColorDataPB: [colorData] = load("PB.json")
 
+let ColorDataArray: [String:[colorData]] = [
+    "R":ColorDataR,"YR":ColorDataYR,"Y":ColorDataY,"GY":ColorDataGY,"G":ColorDataG,"BG":ColorDataBG,"B":ColorDataB,"PB":ColorDataPB
+]
+
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     
