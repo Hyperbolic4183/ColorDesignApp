@@ -11,13 +11,21 @@ import SwiftUI
 struct MainList: View {
     @EnvironmentObject var favoriteArray: ObservedRGB
     var body: some View {
-        List {
-            ForEach(favoriteArray.rgbArray, id: \.self){ item in
-                Text("R値は\(item[0])B値は\(item[1])G値は\(item[2])")
-                
-            }
+        //var Rradix16:String = String(678,radix: 16)
         
+//            ForEach(favoriteArray.rgbArray, id: \.self){ item in
+//                Text("\(String(item[0],radix: 16))\(String(item[1],radix: 16))\(String(item[2],radix: 16))")
+        List {
+            ForEach(0..<self.favoriteArray.rgbArray.count) { item in
+                
+                ListRow(rValue: self.favoriteArray.rgbArray[item][0], gValue: self.favoriteArray.rgbArray[item][1], bValue: self.favoriteArray.rgbArray[item][2])
+            }
         }
+                
+            
+        
+        
+        
     }
 }
 
