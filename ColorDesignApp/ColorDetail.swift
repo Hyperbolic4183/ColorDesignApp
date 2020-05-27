@@ -13,6 +13,7 @@ struct ColorDetail: View {
     var g:Int
     var b:Int
     @EnvironmentObject var favoriteArray: ObservedRGB
+    
     var body: some View {
         GeometryReader{ bodyView in
         VStack {

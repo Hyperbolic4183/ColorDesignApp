@@ -53,6 +53,8 @@ struct CategoryItem: View {
                 .font(.caption)
         }
         .padding(.leading, 15)
+        .compositingGroup()        // Viewの要素をグループ化
+        .shadow(color: .gray, radius: 3, x: 10, y: 10)
     }
 }
 

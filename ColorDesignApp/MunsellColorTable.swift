@@ -25,6 +25,7 @@ struct MunsellColorTable: View {
         ColorValue(colorArray: colorData.v1)
             
         }
+        .navigationBarTitle("\(colorData.name)")
     }
     }
 }

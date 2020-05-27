@@ -16,15 +16,15 @@ struct Main: View {
         NavigationView {
        List{
 
-        ColorTableRow(categoryName: ColorDataR[0].name, items: Array(ColorDataR.prefix(4)))
-        ColorTableRow(categoryName: ColorDataR[0].name, items: Array(ColorDataYR.prefix(4)))
-        ColorTableRow(categoryName: ColorDataR[0].name, items: Array(ColorDataY.prefix(4)))
-        ColorTableRow(categoryName: ColorDataR[0].name, items: Array(ColorDataGY.prefix(4)))
-        ColorTableRow(categoryName: ColorDataR[0].name, items: Array(ColorDataG.prefix(4)))
-        ColorTableRow(categoryName: ColorDataR[0].name, items: Array(ColorDataBG.prefix(4)))
-        ColorTableRow(categoryName: ColorDataR[0].name, items: Array(ColorDataB.prefix(4)))
-        ColorTableRow(categoryName: ColorDataR[0].name, items: Array(ColorDataPB.prefix(4)))
-        
+        ColorTableRow(categoryName: "R", items: Array(ColorDataR.prefix(4)))
+        ColorTableRow(categoryName: "YR", items: Array(ColorDataYR.prefix(4)))
+        ColorTableRow(categoryName: "Y", items: Array(ColorDataY.prefix(4)))
+        ColorTableRow(categoryName: "GY", items: Array(ColorDataGY.prefix(4)))
+        ColorTableRow(categoryName: "G", items: Array(ColorDataG.prefix(4)))
+        ColorTableRow(categoryName: "BG", items: Array(ColorDataBG.prefix(4)))
+        ColorTableRow(categoryName: "B", items: Array(ColorDataB.prefix(4)))
+        ColorTableRow(categoryName: "PB", items: Array(ColorDataPB.prefix(4)))
+        .navigationBarTitle("Munsell")
             }
         }
     }

@@ -8,9 +8,14 @@
 
 import SwiftUI
 
+
+
+
 class ObservedRGB: ObservableObject {
  
     @Published var rgbArray = [[Int]]()
 }
+
+
 
 
