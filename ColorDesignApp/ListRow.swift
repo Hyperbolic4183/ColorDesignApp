@@ -22,6 +22,6 @@ struct ListRow: View {
 
 struct ListRow_Previews: PreviewProvider {
     static var previews: some View {
-        ListRow(rValue: 0, gValue: 0, bValue: 0)
+        ListRow(rValue: 1, gValue: 0, bValue: 0)
     }
 }
