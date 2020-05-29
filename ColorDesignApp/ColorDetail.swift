@@ -8,13 +8,17 @@
 
 import SwiftUI
 
+
 struct ColorDetail: View {
     var r:Int
     var g:Int
     var b:Int
     @EnvironmentObject var favoriteArray: ObservedRGB
     
+    var userDefaults = UserDefaults.standard
+    
     var body: some View {
+        
         GeometryReader{ bodyView in
         VStack {
              Text("")
@@ -23,8 +27,12 @@ struct ColorDetail: View {
             Text("R値は\(self.r)G値は\(self.g)B値は\(self.b)")
             Button(action: {
                 print("tapped")
-                
                 self.favoriteArray.rgbArray.append([self.r,self.g,self.b])
+                UserDefaults.standard.set(self.favoriteArray.rgbArray, forKey: "storedArray")
+                
+        
+                
+                
             }){
                 Text("保存する")
             }

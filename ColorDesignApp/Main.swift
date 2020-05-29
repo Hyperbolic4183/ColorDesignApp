@@ -11,7 +11,7 @@ import SwiftUI
 
 
 struct Main: View {
-  
+    @EnvironmentObject var favoriteArray: ObservedRGB
     var body: some View {
         NavigationView {
        List{
@@ -26,13 +26,21 @@ struct Main: View {
         ColorTableRow(categoryName: "PB", items: Array(ColorDataPB.prefix(4)))
         .navigationBarTitle("Munsell")
             }
+        }.onAppear {
+            print("test onAppear")
+            guard let defaultItem = UserDefaults.standard.array(forKey: "storedArray") as? [[Int]]
+                else {
+                    print("defaultItem is nil")
+                    return }
+                self.favoriteArray.rgbArray = defaultItem
         }
     }
 }
 
 struct Main_Previews: PreviewProvider {
+    static let favoriteArray = ObservedRGB()
     static var previews: some View {
-        Main()
+        Main().environmentObject(favoriteArray)
         
     }
 }

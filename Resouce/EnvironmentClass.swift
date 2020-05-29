@@ -14,8 +14,22 @@ import SwiftUI
 class ObservedRGB: ObservableObject {
  
     @Published var rgbArray = [[Int]]()
+   
 }
 
 
+//@propertyWrapper
+//struct UserDefault<T> {
+//    let key: String
+//    let defaultValue: T
+//    var wrappedValue: T {
+//        get {
+//            return UserDefaults.standard.array(forKey: key) as? T ?? defaultValue 
+//        }
+//        set {
+//            UserDefaults.standard.set(newValue, forKey: key)
+//        }
+//    }
+//}
 
 
