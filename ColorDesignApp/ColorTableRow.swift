@@ -13,7 +13,9 @@ struct ColorTableRow: View {
     var items: [colorData]
     
     var body: some View {
-       
+        ZStack {
+            Color.black
+            .edgesIgnoringSafeArea(.all)
         VStack(alignment: .leading) {
             
             Text(self.categoryName)
@@ -36,7 +38,7 @@ struct ColorTableRow: View {
         }
             .frame(height: 185)
     }
-
+        }
 }
     }
 }

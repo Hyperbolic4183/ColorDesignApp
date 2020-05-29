@@ -12,11 +12,20 @@ import SwiftUI
 
 struct Main: View {
     @EnvironmentObject var favoriteArray: ObservedRGB
+    init(){
+        UITableView.appearance().backgroundColor = .black
+        UITableViewCell.appearance().backgroundColor = .black
+        UITableView.appearance().tableFooterView = UIView()
+    }
     var body: some View {
+        
         NavigationView {
+            
        List{
 
         ColorTableRow(categoryName: "R", items: Array(ColorDataR.prefix(4)))
+    
+            
         ColorTableRow(categoryName: "YR", items: Array(ColorDataYR.prefix(4)))
         ColorTableRow(categoryName: "Y", items: Array(ColorDataY.prefix(4)))
         ColorTableRow(categoryName: "GY", items: Array(ColorDataGY.prefix(4)))
@@ -24,8 +33,13 @@ struct Main: View {
         ColorTableRow(categoryName: "BG", items: Array(ColorDataBG.prefix(4)))
         ColorTableRow(categoryName: "B", items: Array(ColorDataB.prefix(4)))
         ColorTableRow(categoryName: "PB", items: Array(ColorDataPB.prefix(4)))
-        .navigationBarTitle("Munsell")
-            }
+            
+            
+       }.navigationBarTitle("Search",displayMode: .inline)
+               
+            
+        
+            
         }.onAppear {
             print("test onAppear")
             guard let defaultItem = UserDefaults.standard.array(forKey: "storedArray") as? [[Int]]
@@ -34,6 +48,7 @@ struct Main: View {
                     return }
                 self.favoriteArray.rgbArray = defaultItem
         }
+      
     }
 }
 

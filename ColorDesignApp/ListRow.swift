@@ -17,11 +17,15 @@ struct ListRow: View {
     
 
     var body: some View {
-        
-        Text("\(String(rValue, radix: 16))\(String(gValue, radix: 16))\(String(bValue, radix: 16))")
-            .frame(width: 300, height: 50)
-            .background(Color.init(UIColor(rValue,gValue,bValue)))
-        
+    //    GeometryReader{ bodyView in
+            
+            Text("\(String(self.rValue, radix: 16))\(String(self.gValue, radix: 16))\(String(self.bValue, radix: 16))")
+                .frame(width: /*bodyView.size.width*/300, height: 50)
+                .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
+            .cornerRadius(10)
+                //Spacer()
+            
+        //}
     }
 }
 

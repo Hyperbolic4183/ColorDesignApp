@@ -15,10 +15,18 @@ struct Tab: View {
         
         TabView(selection: $selection) {
             Main().environmentObject(Tab.favoriteArray)
-                .tabItem{Text("a")}.tag(0)
+                
+                .tabItem{
+                    
+                    VStack {
+                    Image(systemName: "magnifyingglass")
+                    
+                        
+                    }
+            }.tag(0)
             
             MainList().environmentObject(Tab.favoriteArray)
-                .tabItem{(Text("ss"))}.tag(1)
+                .tabItem{Image(systemName: "paperclip")}.tag(1)
         }
     }
 }

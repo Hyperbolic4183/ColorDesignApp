@@ -13,24 +13,28 @@ struct MainList: View {
    
     
     var body: some View {
-
         
-            List {
-                ForEach(0..<self.favoriteArray.rgbArray.count) { item in
+        
+        
+            
+                NavigationView{
+                    
+                   
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack(spacing: 8.0) {
+                ForEach(0..<self.favoriteArray.rgbArray.count, id: \.self) { item in
                     
                     
                     ListRow(rValue: self.favoriteArray.rgbArray[item][0], gValue: self.favoriteArray.rgbArray[item][1], bValue: self.favoriteArray.rgbArray[item][2])
+                        .navigationBarTitle("cliped",displayMode: .inline)
                 }
-            }.onAppear() {
-                print("test onAppear")
-            guard let defaultItem = UserDefaults.standard.array(forKey: "storedArray") as? [[Int]]
-                else {
-                    print("defaultItem is nil")
-                    return }
-                self.favoriteArray.rgbArray = defaultItem
+                }
+            
         }
     }
+    }
 }
+    
 
 struct MainList_Previews: PreviewProvider {
     static let favoriteArray = ObservedRGB()

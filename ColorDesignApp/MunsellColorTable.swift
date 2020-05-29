@@ -9,11 +9,16 @@ import SwiftUI
 
 struct MunsellColorTable: View {
     var colorData: colorData
+    
     var body: some View {
         
-        
+        ZStack {
+            Color.black
+                   .edgesIgnoringSafeArea(.all)
         VStack {
+            
         HStack {
+            
         ColorValue(colorArray: colorData.v9)
         ColorValue(colorArray: colorData.v8)
         ColorValue(colorArray: colorData.v7)
@@ -23,10 +28,13 @@ struct MunsellColorTable: View {
         ColorValue(colorArray: colorData.v3)
         ColorValue(colorArray: colorData.v2)
         ColorValue(colorArray: colorData.v1)
-            
+          
         }
+            Spacer()
+                Spacer()
         .navigationBarTitle("\(colorData.name)")
-    }
+        }.background(Color.black)
+        }
     }
 }
 

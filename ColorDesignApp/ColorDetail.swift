@@ -21,10 +21,22 @@ struct ColorDetail: View {
         
         GeometryReader{ bodyView in
         VStack {
+            Spacer()
              Text("")
-           .frame(width: bodyView.size.width, height: bodyView.size.width)
+           .frame(width: bodyView.size.width-50, height: bodyView.size.width-50)
                 .background(Color.init(UIColor(self.r,self.g,self.b)))
-            Text("R値は\(self.r)G値は\(self.g)B値は\(self.b)")
+                .cornerRadius(50)
+            Spacer()
+                HStack {
+                    
+                    VStack {
+                Text("R値は\(self.r)")
+                Text("G値は\(self.g)")
+                Text("B値は\(self.b)")
+                        
+                }
+                    Spacer()
+            }
             Button(action: {
                 print("tapped")
                 self.favoriteArray.rgbArray.append([self.r,self.g,self.b])
@@ -35,7 +47,12 @@ struct ColorDetail: View {
                 
             }){
                 Text("保存する")
+                    .frame(width: 300, height: 50)
+                    .background(Color.gray)
+                .cornerRadius(10)
+            
             }
+            
         }
         }
     }

@@ -16,7 +16,9 @@ struct ColorCell: View {
         NavigationLink(destination: ColorDetail(r: rValue, g: gValue, b: bValue)) {
             Text(" ")
         .frame(width: 30, height: 50)
+            
         .background(Color.init(UIColor(rValue,gValue,bValue)))
+                .cornerRadius(8)
         }
     }
 }
