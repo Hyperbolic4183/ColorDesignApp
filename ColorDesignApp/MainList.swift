@@ -8,28 +8,31 @@
 
 import SwiftUI
 
+
+
 struct MainList: View {
     @EnvironmentObject var favoriteArray: ObservedRGB
-   
+    private func reversedFavoriteArray (arr: [[Int]]) -> [[Int]] {
+        
+        return arr.reversed()
+    }
     
     var body: some View {
         
-        
-        
-            
                 NavigationView{
                     
-                   
+                    VStack {
                     ScrollView(.vertical, showsIndicators: false) {
-                        VStack(spacing: 8.0) {
+                        
+                            Spacer()
                 ForEach(0..<self.favoriteArray.rgbArray.count, id: \.self) { item in
                     
-                    
-                    ListRow(rValue: self.favoriteArray.rgbArray[item][0], gValue: self.favoriteArray.rgbArray[item][1], bValue: self.favoriteArray.rgbArray[item][2])
+                    ListRow(rValue: self.reversedFavoriteArray(arr: self.favoriteArray.rgbArray)[item][0], gValue: self.reversedFavoriteArray(arr: self.favoriteArray.rgbArray)[item][1], bValue: self.reversedFavoriteArray(arr: self.favoriteArray.rgbArray)[item][2])
+                       
                         .navigationBarTitle("cliped",displayMode: .inline)
+                
                 }
-                }
-            
+                        }
         }
     }
     }

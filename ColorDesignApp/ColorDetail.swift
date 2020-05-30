@@ -29,7 +29,7 @@ struct ColorDetail: View {
            .frame(width: bodyView.size.width-50, height: bodyView.size.width-50)
                 .background(Color.init(UIColor(self.r,self.g,self.b)))
                 .cornerRadius(50)
-            
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
                    Spacer()
                 
                 Group {
@@ -38,17 +38,20 @@ struct ColorDetail: View {
 
                            .foregroundColor(Color.white)
                            .fontWeight(.semibold)
-                           .frame(width: 300, height: 50)
+                           .frame(width: bodyView.size.width-50, height: 50)
                            .background(Color.init(UIColor(self.r,self.g,self.b)))
+                            
                             .cornerRadius(10)
+                        .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
                        } else {
                            Text("\(String(self.r, radix: 16))\(String(self.g, radix: 16))\(String(self.b, radix: 16))")
 
                            .foregroundColor(Color.black)
                            .fontWeight(.semibold)
-                           .frame(width: 300, height: 50)
+                           .frame(width: bodyView.size.width-50, height: 50)
                            .background(Color.init(UIColor(self.r,self.g,self.b)))
-                            .cornerRadius(10)
+                           .cornerRadius(10)
+                           .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
                            }
                        }
                                 
@@ -67,15 +70,15 @@ struct ColorDetail: View {
             }){
                 
                 Text("保存する")
-                .frame(width: 300, height: 50)
+                .frame(width: bodyView.size.width-50, height: 50)
                     .background(Color.init(UIColor(226,233,243)))
                     
                 .border(Color.gray, width: 2)
-                    
                 .cornerRadius(10)
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
             
             }
-            
+            Spacer()
         }
         }
     }
@@ -102,6 +105,6 @@ extension UIColor {
 struct ColorDetail_Previews: PreviewProvider {
     static let favoriteArray = ObservedRGB()
     static var previews: some View {
-        ColorDetail(r: 3,g:12,b:21)
+        ColorDetail(r: 33,g:124,b:21)
     }
 }

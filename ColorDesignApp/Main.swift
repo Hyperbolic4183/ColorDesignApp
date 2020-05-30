@@ -21,8 +21,8 @@ struct Main: View {
         
         NavigationView {
             
-       List{
-
+      
+        ScrollView(.vertical){
         ColorTableRow(categoryName: "R", items: Array(ColorDataR.prefix(4)))
     
             

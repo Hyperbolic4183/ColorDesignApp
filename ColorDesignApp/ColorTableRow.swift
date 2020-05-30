@@ -16,7 +16,7 @@ struct ColorTableRow: View {
         ZStack {
             Color.white
             .edgesIgnoringSafeArea(.all)
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 0) {
             
             Text(self.categoryName)
                 .font(.headline)
@@ -36,7 +36,7 @@ struct ColorTableRow: View {
             }
                .buttonStyle(PlainButtonStyle())
         }
-            .frame(height: 185)
+            .frame(height: 220)
     }
         }
 }
@@ -45,19 +45,20 @@ struct ColorTableRow: View {
 struct CategoryItem: View {
     var colorData: colorData
     var body: some View {
+      
         VStack(alignment: .leading) {
             colorData.image
             .resizable()
-            .frame(width: 155, height: 155)
-                
-            .cornerRadius(5)
+            .frame(width: 150, height: 150)
+            .cornerRadius(10)
+        
+    
             Text(colorData.name)
-                .foregroundColor(.primary)
-                .font(.caption)
-        }
-        .padding(.leading, 15)
-        .compositingGroup()        // Viewの要素をグループ化
-        .shadow(color: .gray, radius: 3, x: 10, y: 10)
+            .foregroundColor(.primary)
+            .font(.caption)
+        }.padding(.leading, 20)
+        .compositingGroup()
+        .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
     }
 }
 

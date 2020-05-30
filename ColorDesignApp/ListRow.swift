@@ -19,6 +19,10 @@ struct ListRow: View {
     
 
     var body: some View {
+        
+        VStack {
+            Spacer()
+            Spacer()
         Group {
         if self.judgeColorNumber(r: self.rValue, g: self.gValue, b: self.bValue) < 186{
             Text("\(String(self.rValue, radix: 16))\(String(self.gValue, radix: 16))\(String(self.bValue, radix: 16))")
@@ -36,22 +40,16 @@ struct ListRow: View {
             .frame(width: 300, height: 50)
             .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
              .cornerRadius(10)
+           
             }
         }
-  //      self.value = self.Double(rValue)*0.299+self.Double(gValue)+self.Double(bValue)*0.114
- //       var a = 0
-//            if (self.rValue * 0.299 + self.gValue * 0.587 + self.bValue) < 186 {
-//
-//            }
-       // GeometryReader { geometry in
-//        if self.value < 186 {
-        
+            Spacer()
+            Spacer()
             
-//        }
-            
-                
-            
-   //     }
+        }
+        .frame(width: 500)
+        .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+    
     }
 }
 
