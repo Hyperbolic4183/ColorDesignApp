@@ -13,8 +13,11 @@ struct ColorDetail: View {
     var r:Int
     var g:Int
     var b:Int
-    @EnvironmentObject var favoriteArray: ObservedRGB
     
+    @EnvironmentObject var favoriteArray: ObservedRGB
+    func judgeColorNumber (r:Int,g:Int,b:Int) -> Double {
+        return Double(r)*0.299+Double(g)*0.587+Double(b)*0.114
+    }
     var userDefaults = UserDefaults.standard
     
     var body: some View {
@@ -26,17 +29,33 @@ struct ColorDetail: View {
            .frame(width: bodyView.size.width-50, height: bodyView.size.width-50)
                 .background(Color.init(UIColor(self.r,self.g,self.b)))
                 .cornerRadius(50)
-            Spacer()
-                HStack {
-                    
-                    VStack {
-                Text("R値は\(self.r)")
-                Text("G値は\(self.g)")
-                Text("B値は\(self.b)")
-                        
-                }
+            
+                   Spacer()
+                
+                Group {
+                       if self.judgeColorNumber(r: self.r, g: self.g, b: self.b) < 186{
+                           Text("\(String(self.r, radix: 16))\(String(self.g, radix: 16))\(String(self.b, radix: 16))")
+
+                           .foregroundColor(Color.white)
+                           .fontWeight(.semibold)
+                           .frame(width: 300, height: 50)
+                           .background(Color.init(UIColor(self.r,self.g,self.b)))
+                            .cornerRadius(10)
+                       } else {
+                           Text("\(String(self.r, radix: 16))\(String(self.g, radix: 16))\(String(self.b, radix: 16))")
+
+                           .foregroundColor(Color.black)
+                           .fontWeight(.semibold)
+                           .frame(width: 300, height: 50)
+                           .background(Color.init(UIColor(self.r,self.g,self.b)))
+                            .cornerRadius(10)
+                           }
+                       }
+                                
+                
+                
                     Spacer()
-            }
+            
             Button(action: {
                 print("tapped")
                 self.favoriteArray.rgbArray.append([self.r,self.g,self.b])
@@ -46,9 +65,13 @@ struct ColorDetail: View {
                 
                 
             }){
+                
                 Text("保存する")
-                    .frame(width: 300, height: 50)
-                    .background(Color.gray)
+                .frame(width: 300, height: 50)
+                    .background(Color.init(UIColor(226,233,243)))
+                    
+                .border(Color.gray, width: 2)
+                    
                 .cornerRadius(10)
             
             }
@@ -79,6 +102,6 @@ extension UIColor {
 struct ColorDetail_Previews: PreviewProvider {
     static let favoriteArray = ObservedRGB()
     static var previews: some View {
-        ColorDetail(r: 3,g:12,b:21).environmentObject(favoriteArray)
+        ColorDetail(r: 3,g:12,b:21)
     }
 }

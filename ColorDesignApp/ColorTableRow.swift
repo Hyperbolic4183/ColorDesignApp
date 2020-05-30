@@ -49,8 +49,8 @@ struct CategoryItem: View {
             colorData.image
             .resizable()
             .frame(width: 155, height: 155)
-                .border(Color.black, width: 2)
-            .cornerRadius(10)
+                
+            .cornerRadius(5)
             Text(colorData.name)
                 .foregroundColor(.primary)
                 .font(.caption)

@@ -11,6 +11,7 @@ import SwiftUI
 struct ColorValue: View {
     
     var colorArray: [[Int]]
+    
     var body: some View {
       
         VStack {

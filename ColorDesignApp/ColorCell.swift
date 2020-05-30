@@ -12,10 +12,11 @@ struct ColorCell: View {
     var rValue: Int
     var gValue: Int
     var bValue: Int
+
     var body: some View {
         NavigationLink(destination: ColorDetail(r: rValue, g: gValue, b: bValue)) {
             Text(" ")
-        .frame(width: 30, height: 50)
+        .frame(width: 30, height: 35)
             
         .background(Color.init(UIColor(rValue,gValue,bValue)))
                 .cornerRadius(8)

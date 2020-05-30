@@ -20,7 +20,7 @@ struct ListRow: View {
 
     var body: some View {
         Group {
-        if self.judgeColorNumber(r: self.rValue, g: self.bValue, b: self.bValue) < 186{
+        if self.judgeColorNumber(r: self.rValue, g: self.gValue, b: self.bValue) < 186{
             Text("\(String(self.rValue, radix: 16))\(String(self.gValue, radix: 16))\(String(self.bValue, radix: 16))")
 
             .foregroundColor(Color.white)
