@@ -12,9 +12,7 @@ struct MunsellColorTable: View {
     
     var body: some View {
         
-        ZStack {
-            Color.black
-                   .edgesIgnoringSafeArea(.all)
+        
         VStack {
             
         HStack {
@@ -33,8 +31,8 @@ struct MunsellColorTable: View {
             Spacer()
                 Spacer()
         .navigationBarTitle("\(colorData.name)")
-        }.background(Color.black)
         }
+        
     }
 }
 

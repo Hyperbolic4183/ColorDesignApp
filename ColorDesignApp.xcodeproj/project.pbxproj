@@ -64,6 +64,7 @@
 		47F3288A247CEF250051AF47 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F32889247CEF250051AF47 /* Tab.swift */; };
 		47F3288C247CF0A50051AF47 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3288B247CF0A50051AF47 /* MainList.swift */; };
 		47F32890247DFC7B0051AF47 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3288F247DFC7B0051AF47 /* ListRow.swift */; };
+		47F328942481E4C40051AF47 /* test17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F328932481E4C40051AF47 /* test17.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		47F32889247CEF250051AF47 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		47F3288B247CF0A50051AF47 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
 		47F3288F247DFC7B0051AF47 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		47F328932481E4C40051AF47 /* test17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test17.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 				4753F7EE24764D1500564746 /* 7.5PB.jpg */,
 				4753F7ED24764D1500564746 /* 10PB.jpg */,
 				4753F7872473B1FB00564746 /* Products */,
+				47F328932481E4C40051AF47 /* test17.swift */,
 			);
 			path = Resouce;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				47F32888247CDEF40051AF47 /* ColorCell.swift in Sources */,
 				4753F78C2473B1FB00564746 /* SceneDelegate.swift in Sources */,
 				4753F7F624764F9600564746 /* Main.swift in Sources */,
+				47F328942481E4C40051AF47 /* test17.swift in Sources */,
 				4753F7A82473B4C900564746 /* colorData.swift in Sources */,
 				477EE2E1247BC5E400BE6BDD /* ColorValue.swift in Sources */,
 				477EE2E3247BCA4800BE6BDD /* MunsellColorTable.swift in Sources */,

@@ -13,8 +13,8 @@ import SwiftUI
 struct Main: View {
     @EnvironmentObject var favoriteArray: ObservedRGB
     init(){
-        UITableView.appearance().backgroundColor = .black
-        UITableViewCell.appearance().backgroundColor = .black
+        UITableView.appearance().backgroundColor = .white
+        UITableViewCell.appearance().backgroundColor = .white
         UITableView.appearance().tableFooterView = UIView()
     }
     var body: some View {
