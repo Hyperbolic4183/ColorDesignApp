@@ -23,7 +23,7 @@ struct SaveButton: View {
             }){
                 
                 Text("保存する")
-                .frame(width: geometry.size.width-50, height: 50)
+                .frame(width: geometry.size.width-100, height: 50)
                     .background(Color.init(UIColor(226,233,243)))
                     
                 .border(Color.gray, width: 2)

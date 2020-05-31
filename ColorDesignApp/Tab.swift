@@ -19,7 +19,7 @@ struct Tab: View {
                 .tabItem{
                     
                     VStack {
-                    Image(systemName: "magnifyingglass")
+                    Image(systemName: "table")
                     
                         
                     }
@@ -27,6 +27,9 @@ struct Tab: View {
             
             MainList().environmentObject(Tab.favoriteArray)
                 .tabItem{Image(systemName: "paperclip")}.tag(1)
+            
+            MainSlider(R: 0, G: 0, B: 0).environmentObject(Tab.favoriteArray)
+                .tabItem{Image(systemName: "slider.horizontal.3")}.tag(2)
         }
     }
 }

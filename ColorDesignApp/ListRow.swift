@@ -31,7 +31,7 @@ struct ListRow: View {
 
             .foregroundColor(Color.white)
             .fontWeight(.semibold)
-            .frame(width: geometry.size.width-50, height: 50, alignment: .center)
+            .frame(width: geometry.size.width-100, height: 50, alignment: .center)
             .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
             .cornerRadius(10)
             .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
@@ -42,7 +42,7 @@ struct ListRow: View {
 
             .foregroundColor(Color.black)
             .fontWeight(.semibold)
-            .frame(width: geometry.size.width-50, height: 50)
+            .frame(width: geometry.size.width-100, height: 50)
             .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
              .cornerRadius(10)
             }

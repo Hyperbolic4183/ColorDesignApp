@@ -20,7 +20,7 @@ struct ColorValue: View {
 
                     Spacer()
 
-                    ForEach(0..<colorArray.count){ j in
+                    ForEach(0..<colorArray.count, id: \.self){ j in
                         
                         ColorCell(rValue: self.colorArray[j][0], gValue: self.colorArray[j][1], bValue: self.colorArray[j][2])
 

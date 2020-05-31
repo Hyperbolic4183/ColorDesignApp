@@ -16,7 +16,7 @@ struct RGBRectangle: View {
     var body: some View {
         GeometryReader { geometry in
         Rectangle()
-        .frame(width: geometry.size.width-50, height: geometry.size.width-50)
+        .frame(width: geometry.size.width-100, height: geometry.size.width-100)
              .foregroundColor(Color.init(UIColor(self.R,self.G,self.B)))
              .cornerRadius(50)
              .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)

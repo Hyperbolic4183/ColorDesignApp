@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-struct Picker: View {
-    @State var R:Double = 0
-    @State var G:Double = 0
-    @State var B:Double = 0
+struct MainSlider: View {
+    @State var R:Double
+    @State var G:Double
+    @State var B:Double
     func judgeColorNumber (r:Int,g:Int,b:Int) -> Double {
         return Double(r)*0.299+Double(g)*0.587+Double(b)*0.114
     }
@@ -53,6 +53,6 @@ struct Picker: View {
 
 struct Picker_Previews: PreviewProvider {
     static var previews: some View {
-        Picker()
+        MainSlider(R: 0, G: 0, B: 0)
     }
 }
