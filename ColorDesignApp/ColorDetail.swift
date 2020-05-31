@@ -24,36 +24,40 @@ struct ColorDetail: View {
         
         GeometryReader{ bodyView in
         VStack {
-            Spacer()
-             Text("")
+            
+             Rectangle()
            .frame(width: bodyView.size.width-50, height: bodyView.size.width-50)
-                .background(Color.init(UIColor(self.r,self.g,self.b)))
+                .foregroundColor(Color.init(UIColor(self.r,self.g,self.b)))
                 .cornerRadius(50)
+                
                 .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+                .offset(y: 100)
                    Spacer()
                 
-                Group {
-                       if self.judgeColorNumber(r: self.r, g: self.g, b: self.b) < 186{
-                           Text("\(String(self.r, radix: 16))\(String(self.g, radix: 16))\(String(self.b, radix: 16))")
-
-                           .foregroundColor(Color.white)
-                           .fontWeight(.semibold)
-                           .frame(width: bodyView.size.width-50, height: 50)
-                           .background(Color.init(UIColor(self.r,self.g,self.b)))
-                            
-                            .cornerRadius(10)
-                        .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
-                       } else {
-                           Text("\(String(self.r, radix: 16))\(String(self.g, radix: 16))\(String(self.b, radix: 16))")
-
-                           .foregroundColor(Color.black)
-                           .fontWeight(.semibold)
-                           .frame(width: bodyView.size.width-50, height: 50)
-                           .background(Color.init(UIColor(self.r,self.g,self.b)))
-                           .cornerRadius(10)
-                           .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
-                           }
-                       }
+//                Group {
+//                       if self.judgeColorNumber(r: self.r, g: self.g, b: self.b) < 186{
+//                           Text("\(String(self.r, radix: 16))\(String(self.g, radix: 16))\(String(self.b, radix: 16))")
+//
+//                           .foregroundColor(Color.white)
+//                           .fontWeight(.semibold)
+//                           .frame(width: bodyView.size.width-50, height: 50)
+//                           .background(Color.init(UIColor(self.r,self.g,self.b)))
+//
+//                            .cornerRadius(10)
+//                        .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+//                       } else {
+//                           Text("\(String(self.r, radix: 16))\(String(self.g, radix: 16))\(String(self.b, radix: 16))")
+//
+//                           .foregroundColor(Color.black)
+//                           .fontWeight(.semibold)
+//                           .frame(width: bodyView.size.width-50, height: 50)
+//                           .background(Color.init(UIColor(self.r,self.g,self.b)))
+//                           .cornerRadius(10)
+//                           .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+//                           }
+//                       }
+            ListRow(rValue: self.r, gValue: self.g, bValue: self.b)
+                .offset(y: 50)
                                 
                 
                 
@@ -78,6 +82,8 @@ struct ColorDetail: View {
                 .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
             
             }
+            
+            Spacer()
             Spacer()
         }
         }

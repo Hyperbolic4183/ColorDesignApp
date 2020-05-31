@@ -19,37 +19,40 @@ struct ListRow: View {
     
 
     var body: some View {
-        
+         
         VStack {
-            Spacer()
-            Spacer()
+            
+            
         Group {
+           
         if self.judgeColorNumber(r: self.rValue, g: self.gValue, b: self.bValue) < 186{
+             GeometryReader { geometry in //追加
             Text("\(String(self.rValue, radix: 16))\(String(self.gValue, radix: 16))\(String(self.bValue, radix: 16))")
 
             .foregroundColor(Color.white)
             .fontWeight(.semibold)
-            .frame(width: 300, height: 50)
+            .frame(width: geometry.size.width-50, height: 50, alignment: .center)
             .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
-             .cornerRadius(10)
+            .cornerRadius(10)
+            .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+                }
         } else {
+            GeometryReader { geometry in
             Text("\(String(self.rValue, radix: 16))\(String(self.gValue, radix: 16))\(String(self.bValue, radix: 16))")
 
             .foregroundColor(Color.black)
             .fontWeight(.semibold)
-            .frame(width: 300, height: 50)
+            .frame(width: geometry.size.width-50, height: 50)
             .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
              .cornerRadius(10)
-           
             }
+            } 
         }
-            Spacer()
-            Spacer()
             
-        }
-        .frame(width: 500)
+        
+       
         .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
-    
+        }.frame(height: 50)
     }
 }
 

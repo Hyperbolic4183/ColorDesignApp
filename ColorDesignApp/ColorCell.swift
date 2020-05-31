@@ -15,11 +15,10 @@ struct ColorCell: View {
 
     var body: some View {
         NavigationLink(destination: ColorDetail(r: rValue, g: gValue, b: bValue)) {
-            Text(" ")
+            Rectangle()
         .frame(width: 30, height: 35)
-            
-        .background(Color.init(UIColor(rValue,gValue,bValue)))
-                .cornerRadius(8)
+            .foregroundColor(Color.init(UIColor(rValue,gValue,bValue)))
+            .cornerRadius(8)
             .shadow(color: Color.gray.opacity(0.7), radius: 5.0, x: 0.0, y: 0.0)
         }
     }
