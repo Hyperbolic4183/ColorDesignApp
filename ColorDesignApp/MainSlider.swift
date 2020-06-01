@@ -1,8 +1,8 @@
 //
-//  Picker.swift
+//  MainSlider.swift
 //  ColorDesignApp
 //
-//  Created by 大塚周 on 2020/05/31.
+//  Created by 大塚周 on 2020/06/01.
 //  Copyright © 2020 大塚周. All rights reserved.
 //
 
@@ -16,12 +16,13 @@ struct MainSlider: View {
         return Double(r)*0.299+Double(g)*0.587+Double(b)*0.114
     }
     var body: some View {
+        NavigationView {
         VStack(alignment: .center) {
-            
+            Spacer()
             RGBRectangle(R: Int(self.R), G: Int(self.G), B: Int(self.B))
-    
+            Spacer()
             ListRow(rValue: Int(self.R), gValue: Int(self.G), bValue: Int(self.B))
-             
+             Spacer()
             Group {
             HStack{
                 Circle()
@@ -45,13 +46,15 @@ struct MainSlider: View {
                 Slider(value: self.$B, in: 0...255).frame(width: 200)
             }
             }.shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+            Spacer()
             SaveButton(R: Int(R), G: Int(G), B: Int(B))
-            }
-        
+            Spacer()
+        }.navigationBarTitle("Slider",displayMode: .inline)
+        }
     }
 }
 
-struct Picker_Previews: PreviewProvider {
+struct MainSlider_Previews: PreviewProvider {
     static var previews: some View {
         MainSlider(R: 0, G: 0, B: 0)
     }

@@ -14,7 +14,7 @@ struct ColorCell: View {
     var bValue: Int
 
     var body: some View {
-        NavigationLink(destination: /*ColorDetail(r: rValue, g: gValue, b: bValue)*/MainSlider(R: Double(rValue), G: Double(gValue), B: Double(bValue))) {
+        NavigationLink(destination: ColorSlider(R: Double(rValue), G: Double(gValue), B: Double(bValue))) {
             Text("")
         .frame(width: 30, height: 35)
             .background(Color.init(UIColor(rValue,gValue,bValue)))

@@ -14,7 +14,7 @@ struct SaveButton: View {
     var B: Int
     @EnvironmentObject var favoriteArray: ObservedRGB
     var body: some View {
-        GeometryReader { geometry in
+    //    GeometryReader { geometry in
         Button(action: {
                 print("tapped")
                 self.favoriteArray.rgbArray.append([self.R,self.G,self.B])
@@ -23,13 +23,13 @@ struct SaveButton: View {
             }){
                 
                 Text("保存する")
-                .frame(width: geometry.size.width-100, height: 50)
+                .frame(width: 300, height: 50)
                     .background(Color.init(UIColor(226,233,243)))
                     
                 .border(Color.gray, width: 2)
                 .cornerRadius(10)
                 .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
-            }
+           // }
             }
     }
 }
