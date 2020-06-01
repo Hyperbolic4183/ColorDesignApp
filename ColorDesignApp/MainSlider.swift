@@ -19,9 +19,9 @@ struct MainSlider: View {
         VStack(alignment: .center) {
             
             RGBRectangle(R: Int(self.R), G: Int(self.G), B: Int(self.B))
-                .offset(y: 50)
+    
             ListRow(rValue: Int(self.R), gValue: Int(self.G), bValue: Int(self.B))
-                .offset(y:120)
+             
             Group {
             HStack{
                 Circle()
@@ -44,8 +44,8 @@ struct MainSlider: View {
                 Text(String(Int(self.B))).frame(width: 40)
                 Slider(value: self.$B, in: 0...255).frame(width: 200)
             }
-            }.offset(y:140)
-            SaveButton(R: Int(R), G: Int(G), B: Int(B)).offset(y:70)
+            }.shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+            SaveButton(R: Int(R), G: Int(G), B: Int(B))
             }
         
     }

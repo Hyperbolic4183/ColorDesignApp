@@ -25,15 +25,19 @@ struct Gradation: View {
         return gradientColor
     }
     var body: some View {
-        GeometryReader{ bodyView in
+        VStack {
+            GeometryReader{ bodyView in
 
-        ZStack {
-            
-            self.gradiateColor().edgesIgnoringSafeArea(.all)
-                .frame(width: bodyView.size.width-50, height: bodyView.size.width-50)
-            
-            .cornerRadius(50)
+            ZStack {
+                
+                self.gradiateColor().edgesIgnoringSafeArea(.all)
+                    .frame(width: bodyView.size.width-50, height: bodyView.size.width-50)
+                
+                .cornerRadius(50)
+                }
             }
+            Text("s")
+            
         }
     }
 }

@@ -18,18 +18,16 @@ struct Tab: View {
                 
                 .tabItem{
                     
-                    VStack {
                     Image(systemName: "table")
-                    
-                        
-                    }
             }.tag(0)
             
-            MainList().environmentObject(Tab.favoriteArray)
-                .tabItem{Image(systemName: "paperclip")}.tag(1)
+            MainSlider(R: 0, G: 0, B: 0).environmentObject(Tab.favoriteArray).tabItem({Image(systemName: "slider.horizontal.3")}).tag(1)
             
-            MainSlider(R: 0, G: 0, B: 0).environmentObject(Tab.favoriteArray)
-                .tabItem{Image(systemName: "slider.horizontal.3")}.tag(2)
+            MainList().environmentObject(Tab.favoriteArray)
+                .tabItem{Image(systemName: "paperclip")}.tag(2)
+            
+
+            
         }
     }
 }

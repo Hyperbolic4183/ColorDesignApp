@@ -24,8 +24,6 @@ struct Main: View {
       
         ScrollView(.vertical){
         ColorTableRow(categoryName: "R", items: Array(ColorDataR.prefix(4)))
-    
-            
         ColorTableRow(categoryName: "YR", items: Array(ColorDataYR.prefix(4)))
         ColorTableRow(categoryName: "Y", items: Array(ColorDataY.prefix(4)))
         ColorTableRow(categoryName: "GY", items: Array(ColorDataGY.prefix(4)))

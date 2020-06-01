@@ -69,6 +69,7 @@
 		47F328DC2483349A0051AF47 /* RGBRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F328DB2483349A0051AF47 /* RGBRectangle.swift */; };
 		47F328DE248351360051AF47 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F328DD248351360051AF47 /* SaveButton.swift */; };
 		47F328E02483629E0051AF47 /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F328DF2483629E0051AF47 /* ColorSlider.swift */; };
+		47F328E4248387A40051AF47 /* RGBSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F328E3248387A40051AF47 /* RGBSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,7 @@
 		47F328DB2483349A0051AF47 /* RGBRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBRectangle.swift; sourceTree = "<group>"; };
 		47F328DD248351360051AF47 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
 		47F328DF2483629E0051AF47 /* ColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
+		47F328E3248387A40051AF47 /* RGBSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				47F328DB2483349A0051AF47 /* RGBRectangle.swift */,
 				47F328DD248351360051AF47 /* SaveButton.swift */,
 				47F328DF2483629E0051AF47 /* ColorSlider.swift */,
+				47F328E3248387A40051AF47 /* RGBSlider.swift */,
 				4753F78F2473B1FE00564746 /* Assets.xcassets */,
 				4753F7942473B1FE00564746 /* LaunchScreen.storyboard */,
 				4753F7972473B1FE00564746 /* Info.plist */,
@@ -393,6 +396,7 @@
 				47F3288C247CF0A50051AF47 /* MainList.swift in Sources */,
 				47F32888247CDEF40051AF47 /* ColorCell.swift in Sources */,
 				47F328962481F2C70051AF47 /* Gradation.swift in Sources */,
+				47F328E4248387A40051AF47 /* RGBSlider.swift in Sources */,
 				4753F78C2473B1FB00564746 /* SceneDelegate.swift in Sources */,
 				47F328DA248326870051AF47 /* MainSlider.swift in Sources */,
 				4753F7F624764F9600564746 /* Main.swift in Sources */,

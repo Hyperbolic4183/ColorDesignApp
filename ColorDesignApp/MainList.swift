@@ -18,22 +18,21 @@ struct MainList: View {
     }
     
     var body: some View {
-        
-                NavigationView{
-                    ScrollView(.vertical) {
-                    
-                        VStack(spacing: 10.0) {
-                            
+        NavigationView{
+        ScrollView(.vertical, showsIndicators: false) {
+            
+            Spacer()
+            VStack(spacing: 10){
                 ForEach(0..<self.favoriteArray.rgbArray.count, id: \.self) { item in
-                    
+
                     ListRow(rValue: self.reversedFavoriteArray(arr: self.favoriteArray.rgbArray)[item][0], gValue: self.reversedFavoriteArray(arr: self.favoriteArray.rgbArray)[item][1], bValue: self.reversedFavoriteArray(arr: self.favoriteArray.rgbArray)[item][2])
-                
-               
-                        }.frame(alignment: .center)
-                    }
-                    }
-                    .navigationBarTitle("cliped",displayMode: .inline)
-    }
+
+
+                        }
+            }
+                    
+                    }.navigationBarTitle("cliped",displayMode: .inline)
+        }
     }
 }
     
