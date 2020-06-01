@@ -36,7 +36,6 @@ struct Gradation: View {
                 .cornerRadius(50)
                 }
             }
-            Text("s")
             
         }
     }

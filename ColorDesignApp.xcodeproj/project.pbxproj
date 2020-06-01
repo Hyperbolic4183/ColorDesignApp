@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		474BF5E82484DC100003C366 /* MainSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474BF5E72484DC100003C366 /* MainSlider.swift */; };
+		474BF5EE2485383A0003C366 /* GradiationSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474BF5ED2485383A0003C366 /* GradiationSet.swift */; };
+		474BF5F0248549AC0003C366 /* アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5EF248549AC0003C366 /* アイコン.png */; };
+		474BF5F724854B870003C366 /* アイコン58.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5F124854B870003C366 /* アイコン58.png */; };
+		474BF5F924854B870003C366 /* アイコン80.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5F324854B870003C366 /* アイコン80.png */; };
+		474BF5FB24854B870003C366 /* アイコン120.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5F524854B870003C366 /* アイコン120.png */; };
+		474BF5FC24854B870003C366 /* アイコン67.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5F624854B870003C366 /* アイコン67.png */; };
+		474BF5FF24854C860003C366 /* アイコン87.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5FD24854C860003C366 /* アイコン87.png */; };
+		474BF60024854C860003C366 /* アイコン40.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5FE24854C860003C366 /* アイコン40.png */; };
+		474BF60224854CEF0003C366 /* アイコン60.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF60124854CEF0003C366 /* アイコン60.png */; };
+		474BF60424854D320003C366 /* アイコン1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF60324854D320003C366 /* アイコン1024.png */; };
 		4753F78A2473B1FB00564746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753F7892473B1FB00564746 /* AppDelegate.swift */; };
 		4753F78C2473B1FB00564746 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753F78B2473B1FB00564746 /* SceneDelegate.swift */; };
 		4753F7902473B1FE00564746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4753F78F2473B1FE00564746 /* Assets.xcassets */; };
@@ -73,6 +83,16 @@
 
 /* Begin PBXFileReference section */
 		474BF5E72484DC100003C366 /* MainSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSlider.swift; sourceTree = "<group>"; };
+		474BF5ED2485383A0003C366 /* GradiationSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiationSet.swift; sourceTree = "<group>"; };
+		474BF5EF248549AC0003C366 /* アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン.png"; sourceTree = "<group>"; };
+		474BF5F124854B870003C366 /* アイコン58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン58.png"; sourceTree = "<group>"; };
+		474BF5F324854B870003C366 /* アイコン80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン80.png"; sourceTree = "<group>"; };
+		474BF5F524854B870003C366 /* アイコン120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン120.png"; sourceTree = "<group>"; };
+		474BF5F624854B870003C366 /* アイコン67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン67.png"; sourceTree = "<group>"; };
+		474BF5FD24854C860003C366 /* アイコン87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン87.png"; sourceTree = "<group>"; };
+		474BF5FE24854C860003C366 /* アイコン40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アイコン40.png"; path = "../../../いろいろ一時的におくやつ/アイコン40.png"; sourceTree = "<group>"; };
+		474BF60124854CEF0003C366 /* アイコン60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アイコン60.png"; path = "../../../いろいろ一時的におくやつ/アイコン60.png"; sourceTree = "<group>"; };
+		474BF60324854D320003C366 /* アイコン1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン1024.png"; sourceTree = "<group>"; };
 		4753F7862473B1FB00564746 /* ColorDesignApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorDesignApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4753F7892473B1FB00564746 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4753F78B2473B1FB00564746 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +238,7 @@
 		4753F7A22473B41500564746 /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				474BF5ED2485383A0003C366 /* GradiationSet.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -225,6 +246,15 @@
 		47F32897248231C40051AF47 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				474BF5EF248549AC0003C366 /* アイコン.png */,
+				474BF5FE24854C860003C366 /* アイコン40.png */,
+				474BF5FD24854C860003C366 /* アイコン87.png */,
+				474BF5F124854B870003C366 /* アイコン58.png */,
+				474BF60124854CEF0003C366 /* アイコン60.png */,
+				474BF5F624854B870003C366 /* アイコン67.png */,
+				474BF5F324854B870003C366 /* アイコン80.png */,
+				474BF5F524854B870003C366 /* アイコン120.png */,
+				474BF60324854D320003C366 /* アイコン1024.png */,
 				47F328A22482326B0051AF47 /* 2.5B.jpg */,
 				47F328B22482326C0051AF47 /* 2.5BG.jpg */,
 				47F328B32482326C0051AF47 /* 2.5G.jpg */,
@@ -337,6 +367,7 @@
 				4753F79F2473B29C00564746 /* R.json in Resources */,
 				47F328C92482326C0051AF47 /* 7.5BG.jpg in Resources */,
 				47F328C62482326C0051AF47 /* 10YR.jpg in Resources */,
+				474BF60224854CEF0003C366 /* アイコン60.png in Resources */,
 				47F328D72482326C0051AF47 /* 10R.jpg in Resources */,
 				47F328D42482326C0051AF47 /* 5G.jpg in Resources */,
 				4753F7962473B1FE00564746 /* LaunchScreen.storyboard in Resources */,
@@ -348,6 +379,7 @@
 				47F328C42482326C0051AF47 /* 5B.jpg in Resources */,
 				47F328D82482326C0051AF47 /* 5GY.jpg in Resources */,
 				47F328BF2482326C0051AF47 /* 7.5R.jpg in Resources */,
+				474BF5F924854B870003C366 /* アイコン80.png in Resources */,
 				4753F7CA2475FA0D00564746 /* PB.json in Resources */,
 				47F328CD2482326C0051AF47 /* 2.5Y.jpg in Resources */,
 				47F328C12482326C0051AF47 /* 2.5PB.jpg in Resources */,
@@ -359,6 +391,7 @@
 				4753F7C0247423E300564746 /* Y.json in Resources */,
 				47F328C32482326C0051AF47 /* 7.5GY.jpg in Resources */,
 				47F328C22482326C0051AF47 /* 2.5B.jpg in Resources */,
+				474BF5F724854B870003C366 /* アイコン58.png in Resources */,
 				47F328D32482326C0051AF47 /* 2.5G.jpg in Resources */,
 				47F328BD2482326C0051AF47 /* 10BG.jpg in Resources */,
 				4753F7C22475009000564746 /* GY.json in Resources */,
@@ -370,13 +403,19 @@
 				47F328CA2482326C0051AF47 /* 2.5YR.jpg in Resources */,
 				47F328BB2482326C0051AF47 /* 10GY.jpg in Resources */,
 				47F328B92482326C0051AF47 /* 7.5B.jpg in Resources */,
+				474BF5FC24854B870003C366 /* アイコン67.png in Resources */,
+				474BF5FF24854C860003C366 /* アイコン87.png in Resources */,
 				47F328CE2482326C0051AF47 /* 2.5R.jpg in Resources */,
 				47F328D62482326C0051AF47 /* 5PB.jpg in Resources */,
 				47F328BE2482326C0051AF47 /* 7.5PB.jpg in Resources */,
+				474BF60024854C860003C366 /* アイコン40.png in Resources */,
 				4753F7902473B1FE00564746 /* Assets.xcassets in Resources */,
 				47F328C72482326C0051AF47 /* 5R.jpg in Resources */,
 				4753F7C6247547C500564746 /* BG.json in Resources */,
+				474BF5FB24854B870003C366 /* アイコン120.png in Resources */,
 				47F328D22482326C0051AF47 /* 2.5BG.jpg in Resources */,
+				474BF60424854D320003C366 /* アイコン1024.png in Resources */,
+				474BF5F0248549AC0003C366 /* アイコン.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +434,7 @@
 				4753F78C2473B1FB00564746 /* SceneDelegate.swift in Sources */,
 				47F328DA248326870051AF47 /* ColorSlider.swift in Sources */,
 				4753F7F624764F9600564746 /* Main.swift in Sources */,
+				474BF5EE2485383A0003C366 /* GradiationSet.swift in Sources */,
 				4753F7A82473B4C900564746 /* colorData.swift in Sources */,
 				477EE2E1247BC5E400BE6BDD /* ColorValue.swift in Sources */,
 				477EE2E3247BCA4800BE6BDD /* MunsellColorTable.swift in Sources */,

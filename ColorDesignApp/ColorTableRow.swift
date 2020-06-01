@@ -15,8 +15,8 @@ struct ColorTableRow: View {
     var body: some View {
         
         ZStack {
-            Color.white
-            .edgesIgnoringSafeArea(.all)
+//            Color.white
+//            .edgesIgnoringSafeArea(.all)
             ZStack {
             
             //
@@ -40,7 +40,7 @@ struct ColorTableRow: View {
                     .padding(.init(top: 0, leading: (fullView.size.width - 150) / 2, bottom: 0, trailing: 0))
                .buttonStyle(PlainButtonStyle())
         }
-            .frame(height: 180)
+            .frame(height: 200)
     }
                 HStack {
                     Text(self.categoryName)

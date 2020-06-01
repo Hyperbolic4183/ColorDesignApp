@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ListRow: View {
-    
+    @State private var showingAlert = false
     var rValue: Int
     var gValue: Int
     var bValue: Int
@@ -35,6 +35,7 @@ struct ListRow: View {
            
         if self.judgeColorNumber(r: self.rValue, g: self.gValue, b: self.bValue) < 186{
      
+            
                 Text(self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue)))
 
             .foregroundColor(Color.white)
@@ -56,7 +57,13 @@ struct ListRow: View {
             .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
         
             } 
-        }
+        }.onLongPressGesture(minimumDuration: 2.0) {
+            UIPasteboard.general.string = self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue))
+                self.showingAlert = true
+
+            }.alert(isPresented: $showingAlert) {
+                    Alert(title: Text("コピーしました"))
+            }
             
         
        
