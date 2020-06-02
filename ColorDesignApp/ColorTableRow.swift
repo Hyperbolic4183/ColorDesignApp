@@ -37,7 +37,7 @@ struct ColorTableRow: View {
             }
                     
                     //.padding(.horizontal, (fullView.size.width - 150)/2)
-                    .padding(.init(top: 0, leading: (fullView.size.width - 150) / 2, bottom: 0, trailing: 0))
+                    .padding(.init(top: 0, leading: (fullView.size.width - 150) / 2, bottom: 0, trailing: (fullView.size.width - 150) / 2))
                .buttonStyle(PlainButtonStyle())
         }
             .frame(height: 200)

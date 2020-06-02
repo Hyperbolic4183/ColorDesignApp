@@ -20,6 +20,8 @@ struct MainList: View {
     var body: some View {
         NavigationView{
         ScrollView(.vertical, showsIndicators: false) {
+        
+        
             
             Spacer()
             VStack(spacing: 10){
@@ -29,7 +31,7 @@ struct MainList: View {
 
 
                         }
-            }
+            }.gesture(DragGesture())
                     
                     }.navigationBarTitle("cliped",displayMode: .inline)
         }
