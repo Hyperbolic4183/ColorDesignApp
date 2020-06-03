@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-
+// Text(self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue))).frame(width: 300, height: 50)
 
 struct MainList: View {
     @EnvironmentObject var favoriteArray: ObservedRGB
@@ -28,12 +28,11 @@ struct MainList: View {
                 ForEach(0..<self.favoriteArray.rgbArray.count, id: \.self) { item in
 
                     ListRow(rValue: self.reversedFavoriteArray(arr: self.favoriteArray.rgbArray)[item][0], gValue: self.reversedFavoriteArray(arr: self.favoriteArray.rgbArray)[item][1], bValue: self.reversedFavoriteArray(arr: self.favoriteArray.rgbArray)[item][2])
-
-
-                        }
-            }.gesture(DragGesture())
+                }
+                
+            }
                     
-                    }.navigationBarTitle("cliped",displayMode: .inline)
+                    }.navigationBarTitle("Clipped",displayMode: .inline)
         }
     }
 }

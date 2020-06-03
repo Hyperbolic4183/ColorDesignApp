@@ -10,13 +10,9 @@ import SwiftUI
 
 
 
-struct Main: View {
+struct MainTable: View {
     @EnvironmentObject var favoriteArray: ObservedRGB
-//    init(){
-//        UITableView.appearance().backgroundColor = .white
-//        UITableViewCell.appearance().backgroundColor = .white
-//        UITableView.appearance().tableFooterView = UIView()
-//    }
+
     var body: some View {
         
         NavigationView {
@@ -33,13 +29,12 @@ struct Main: View {
         ColorTableRow(categoryName: "PB", items: Array(ColorDataPB.prefix(4)))
             
             
-       }.navigationBarTitle("Search",displayMode: .inline)
+       }.navigationBarTitle("Table",displayMode: .inline)
                
             
         
             
         }.onAppear {
-            print("test onAppear")
             guard let defaultItem = UserDefaults.standard.array(forKey: "storedArray") as? [[Int]]
                 else {
                     print("defaultItem is nil")
@@ -50,10 +45,10 @@ struct Main: View {
     }
 }
 
-struct Main_Previews: PreviewProvider {
+struct MainTable_Previews: PreviewProvider {
     static let favoriteArray = ObservedRGB()
     static var previews: some View {
-        Main().environmentObject(favoriteArray)
+        MainTable().environmentObject(favoriteArray)
         
     }
 }

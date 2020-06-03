@@ -68,7 +68,7 @@ struct CategoryItem: View {
             .cornerRadius(10)
             Spacer()
 
-        }//.padding(.init(top: 30, leading: 0, bottom: 30, trailing: 0))
+        }
             
         .compositingGroup()
         .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)

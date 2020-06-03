@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		474BF5E82484DC100003C366 /* MainSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474BF5E72484DC100003C366 /* MainSlider.swift */; };
-		474BF5EE2485383A0003C366 /* GradiationSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474BF5ED2485383A0003C366 /* GradiationSet.swift */; };
 		474BF5F0248549AC0003C366 /* アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5EF248549AC0003C366 /* アイコン.png */; };
 		474BF5F724854B870003C366 /* アイコン58.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5F124854B870003C366 /* アイコン58.png */; };
 		474BF5F924854B870003C366 /* アイコン80.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5F324854B870003C366 /* アイコン80.png */; };
@@ -43,7 +42,6 @@
 		47F3288A247CEF250051AF47 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F32889247CEF250051AF47 /* Tab.swift */; };
 		47F3288C247CF0A50051AF47 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3288B247CF0A50051AF47 /* MainList.swift */; };
 		47F32890247DFC7B0051AF47 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3288F247DFC7B0051AF47 /* ListRow.swift */; };
-		47F328962481F2C70051AF47 /* Gradation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F328952481F2C70051AF47 /* Gradation.swift */; };
 		47F328B92482326C0051AF47 /* 7.5B.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F328992482326B0051AF47 /* 7.5B.jpg */; };
 		47F328BA2482326C0051AF47 /* 10B.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F3289A2482326B0051AF47 /* 10B.jpg */; };
 		47F328BB2482326C0051AF47 /* 10GY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F3289B2482326B0051AF47 /* 10GY.jpg */; };
@@ -83,7 +81,6 @@
 
 /* Begin PBXFileReference section */
 		474BF5E72484DC100003C366 /* MainSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSlider.swift; sourceTree = "<group>"; };
-		474BF5ED2485383A0003C366 /* GradiationSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiationSet.swift; sourceTree = "<group>"; };
 		474BF5EF248549AC0003C366 /* アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン.png"; sourceTree = "<group>"; };
 		474BF5F124854B870003C366 /* アイコン58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン58.png"; sourceTree = "<group>"; };
 		474BF5F324854B870003C366 /* アイコン80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン80.png"; sourceTree = "<group>"; };
@@ -120,7 +117,6 @@
 		47F32889247CEF250051AF47 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		47F3288B247CF0A50051AF47 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
 		47F3288F247DFC7B0051AF47 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
-		47F328952481F2C70051AF47 /* Gradation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradation.swift; sourceTree = "<group>"; };
 		47F328992482326B0051AF47 /* 7.5B.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.5B.jpg; sourceTree = "<group>"; };
 		47F3289A2482326B0051AF47 /* 10B.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10B.jpg; sourceTree = "<group>"; };
 		47F3289B2482326B0051AF47 /* 10GY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10GY.jpg; sourceTree = "<group>"; };
@@ -201,7 +197,6 @@
 				47F32889247CEF250051AF47 /* Tab.swift */,
 				47F3288B247CF0A50051AF47 /* MainList.swift */,
 				47F3288F247DFC7B0051AF47 /* ListRow.swift */,
-				47F328952481F2C70051AF47 /* Gradation.swift */,
 				47F328D9248326870051AF47 /* ColorSlider.swift */,
 				47F328DB2483349A0051AF47 /* RGBRectangle.swift */,
 				47F328DD248351360051AF47 /* SaveButton.swift */,
@@ -238,7 +233,6 @@
 		4753F7A22473B41500564746 /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				474BF5ED2485383A0003C366 /* GradiationSet.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -430,11 +424,9 @@
 				4753F78A2473B1FB00564746 /* AppDelegate.swift in Sources */,
 				47F3288C247CF0A50051AF47 /* MainList.swift in Sources */,
 				47F32888247CDEF40051AF47 /* ColorCell.swift in Sources */,
-				47F328962481F2C70051AF47 /* Gradation.swift in Sources */,
 				4753F78C2473B1FB00564746 /* SceneDelegate.swift in Sources */,
 				47F328DA248326870051AF47 /* ColorSlider.swift in Sources */,
 				4753F7F624764F9600564746 /* Main.swift in Sources */,
-				474BF5EE2485383A0003C366 /* GradiationSet.swift in Sources */,
 				4753F7A82473B4C900564746 /* colorData.swift in Sources */,
 				477EE2E1247BC5E400BE6BDD /* ColorValue.swift in Sources */,
 				477EE2E3247BCA4800BE6BDD /* MunsellColorTable.swift in Sources */,

@@ -14,7 +14,7 @@ struct Tab: View {
     var body: some View {
         
         TabView(selection: $selection) {
-            Main().environmentObject(Tab.favoriteArray)
+            MainTable().environmentObject(Tab.favoriteArray)
                 
                 .tabItem{
                     

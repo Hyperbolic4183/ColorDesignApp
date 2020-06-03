@@ -20,8 +20,7 @@ struct RGBRectangle: View {
              .foregroundColor(Color.init(UIColor(self.R,self.G,self.B)))
              .cornerRadius(50)
              .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
-             
-       // }
+           
     }
 }
 

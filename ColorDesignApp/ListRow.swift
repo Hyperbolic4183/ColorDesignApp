@@ -13,12 +13,12 @@ struct ListRow: View {
     var rValue: Int
     var gValue: Int
     var bValue: Int
-    func judgeColorNumber (r:Int,g:Int,b:Int) -> Double {
+    func judgeColorNumber (_ r:Int,_ g:Int,_ b:Int) -> Double {
         
         return Double(r)*0.299+Double(g)*0.587+Double(b)*0.114
     }
     
-    func radixJudge (n:Int) -> String {
+    func radixJudge (_ n:Int) -> String {
         if n <= 15 {
             return "0"+String(n,radix: 16)
         } else {
@@ -33,18 +33,10 @@ struct ListRow: View {
             
         Group {
            
-        if self.judgeColorNumber(r: self.rValue, g: self.gValue, b: self.bValue) < 186{
+        if self.judgeColorNumber(self.rValue, self.gValue, self.bValue) < 186{
      
-//            Button(self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue))
-//
-//                , action: {
-//                print("ボタンがおされました")
-//                UIPasteboard.general.string = self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue))
-//                self.showingAlert = true
-//                })
-            Button(action: {
-                UIPasteboard.general.string = self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue))
-                self.showingAlert = true}, label: {Text(self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue))).frame(width: 300, height: 50)})
+
+            Text(self.radixJudge(self.rValue)+(self.radixJudge( self.gValue))+(self.radixJudge(self.bValue))).frame(width: 300, height: 50)
                 .foregroundColor(Color.white)
                 .frame(width: 300, height: 50)
                 .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
@@ -52,54 +44,32 @@ struct ListRow: View {
                 .frame(width: 300, height: 50)
                 .padding(.init(top: 0, leading: 100, bottom: 0, trailing: 100))
                 .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
-                .alert(isPresented: $showingAlert) {
-                        Alert(title: Text("コピーしました"))
-                }
-            
-//            Text(self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue)))
-//
-//            .foregroundColor(Color.white)
-//            .fontWeight(.semibold)
-//            .frame(width: 300, height: 50)
-//            .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
-//            .cornerRadius(10)
-//            .padding(.init(top: 0, leading: 100, bottom: 0, trailing: 100))
-//            .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
-
-        } else {
-            Button(action: {print("adssda")
-                UIPasteboard.general.string = self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue))
-                 self.showingAlert = true}, label: {Text(self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue)))})
-            .foregroundColor(Color.black)
-            .frame(width: 300, height: 50)
-            .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
-            .cornerRadius(10)
-            .frame(width: 300, height: 50)
-            .padding(.init(top: 0, leading: 100, bottom: 0, trailing: 100))
-            .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+                .onTapGesture {}.onLongPressGesture(minimumDuration: 1.0) {
+                UIPasteboard.general.string = self.radixJudge(self.rValue)+(self.radixJudge( self.gValue))+(self.radixJudge(self.bValue))
+                    self.showingAlert = true
+                   }
             .alert(isPresented: $showingAlert) {
-                    Alert(title: Text("コピーしました"))
+                Alert(title: Text("コピーしました"))
             }
-        
+        } else {
+             Text(self.radixJudge(self.rValue)+(self.radixJudge( self.gValue))+(self.radixJudge(self.bValue))).frame(width: 300, height: 50)
+                .foregroundColor(Color.black)
+                .frame(width: 300, height: 50)
+                .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
+                .cornerRadius(10)
+                .frame(width: 300, height: 50)
+                .padding(.init(top: 0, leading: 100, bottom: 0, trailing: 100))
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+                .onTapGesture {}.onLongPressGesture(minimumDuration: 1.0) {
+                UIPasteboard.general.string = self.radixJudge(self.rValue)+(self.radixJudge( self.gValue))+(self.radixJudge(self.bValue))
+                    self.showingAlert = true
+                
+                 }.alert(isPresented: $showingAlert) {
+                 Alert(title: Text("コピーしました"))
+              }
+              }
             }
-//        }.gesture(LongPressGesture(minimumDuration: 1.0)
-//            .onEnded({_ in UIPasteboard.general.string = self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue))
-//            self.showingAlert = true})).alert(isPresented: $showingAlert) {
-//                    Alert(title: Text("コピーしました"))
-//            }
-//
-//        .onLongPressGesture(minimumDuration: 1.0) {
-//            UIPasteboard.general.string = self.radixJudge(n: self.rValue)+(self.radixJudge(n: self.gValue))+(self.radixJudge(n: self.bValue))
-//                self.showingAlert = true
-//
-//            }.alert(isPresented: $showingAlert) {
-//                    Alert(title: Text("コピーしました"))
-            }
-            
-        
-       
-        
-        }//.frame(width: 300, height: 50).padding(.init(top: 0, leading: 100, bottom: 0, trailing: 100))
+        }
     }
 }
 
