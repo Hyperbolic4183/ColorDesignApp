@@ -34,8 +34,6 @@ struct ListRow: View {
         Group {
            
         if self.judgeColorNumber(self.rValue, self.gValue, self.bValue) < 186{
-     
-
             Text(self.radixJudge(self.rValue)+(self.radixJudge( self.gValue))+(self.radixJudge(self.bValue))).frame(width: 300, height: 50)
                 .foregroundColor(Color.white)
                 .frame(width: 300, height: 50)
@@ -53,20 +51,20 @@ struct ListRow: View {
             }
         } else {
              Text(self.radixJudge(self.rValue)+(self.radixJudge( self.gValue))+(self.radixJudge(self.bValue))).frame(width: 300, height: 50)
-                .foregroundColor(Color.black)
-                .frame(width: 300, height: 50)
-                .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
-                .cornerRadius(10)
-                .frame(width: 300, height: 50)
-                .padding(.init(top: 0, leading: 100, bottom: 0, trailing: 100))
-                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
-                .onTapGesture {}.onLongPressGesture(minimumDuration: 1.0) {
-                UIPasteboard.general.string = self.radixJudge(self.rValue)+(self.radixJudge( self.gValue))+(self.radixJudge(self.bValue))
-                    self.showingAlert = true
-                
-                 }.alert(isPresented: $showingAlert) {
+                 .foregroundColor(Color.black)
+                 .frame(width: 300, height: 50)
+                 .background(Color.init(UIColor(self.rValue,self.gValue,self.bValue)))
+                 .cornerRadius(10)
+                 .frame(width: 300, height: 50)
+                 .padding(.init(top: 0, leading: 100, bottom: 0, trailing: 100))
+                 .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+                 .onTapGesture {}.onLongPressGesture(minimumDuration: 1.0) {
+                 UIPasteboard.general.string = self.radixJudge(self.rValue)+(self.radixJudge( self.gValue))+(self.radixJudge(self.bValue))
+                     self.showingAlert = true
+                    }
+             .alert(isPresented: $showingAlert) {
                  Alert(title: Text("コピーしました"))
-              }
+             }
               }
             }
         }

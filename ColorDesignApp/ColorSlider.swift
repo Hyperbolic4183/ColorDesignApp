@@ -28,24 +28,33 @@ struct ColorSlider: View {
                 Circle()
                     .foregroundColor(.red)
                     .frame(width: 20, height: 20)
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
                 Text(String(Int(self.R))).frame(width: 40)
-                Slider(value: self.$R, in: 0...255).frame(width: 200)
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+                Slider(value: self.$R, in: 0...255, step: 1.0).frame(width: 200)
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
             }
             HStack{
                 Circle()
                     .foregroundColor(.green)
                     .frame(width: 20, height: 20)
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
                 Text(String(Int(self.G))).frame(width: 40)
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
                 Slider(value: self.$G, in: 0...255).frame(width: 200)
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
             }
             HStack{
                 Circle()
                     .foregroundColor(.blue)
                     .frame(width: 20, height: 20)
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
                 Text(String(Int(self.B))).frame(width: 40)
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
                 Slider(value: self.$B, in: 0...255).frame(width: 200)
+                .shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
             }
-            }.shadow(color: Color.gray.opacity(0.7), radius: 10.0, x: 0.0, y: 0.0)
+            }
             Spacer()
             SaveButton(R: Int(R), G: Int(G), B: Int(B))
             Spacer()
