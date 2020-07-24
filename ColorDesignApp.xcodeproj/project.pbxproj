@@ -14,8 +14,6 @@
 		474BF5FB24854B870003C366 /* アイコン120.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5F524854B870003C366 /* アイコン120.png */; };
 		474BF5FC24854B870003C366 /* アイコン67.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5F624854B870003C366 /* アイコン67.png */; };
 		474BF5FF24854C860003C366 /* アイコン87.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5FD24854C860003C366 /* アイコン87.png */; };
-		474BF60024854C860003C366 /* アイコン40.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF5FE24854C860003C366 /* アイコン40.png */; };
-		474BF60224854CEF0003C366 /* アイコン60.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF60124854CEF0003C366 /* アイコン60.png */; };
 		474BF60424854D320003C366 /* アイコン1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 474BF60324854D320003C366 /* アイコン1024.png */; };
 		4753F78A2473B1FB00564746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753F7892473B1FB00564746 /* AppDelegate.swift */; };
 		4753F78C2473B1FB00564746 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4753F78B2473B1FB00564746 /* SceneDelegate.swift */; };
@@ -38,6 +36,8 @@
 		476A0110247891B300982DD9 /* EnvironmentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476A010F247891B300982DD9 /* EnvironmentClass.swift */; };
 		477EE2E1247BC5E400BE6BDD /* ColorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477EE2E0247BC5E400BE6BDD /* ColorValue.swift */; };
 		477EE2E3247BCA4800BE6BDD /* MunsellColorTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477EE2E2247BCA4800BE6BDD /* MunsellColorTable.swift */; };
+		47B0B80D24CAA8E100381879 /* アイコン60.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B0B80C24CAA8E100381879 /* アイコン60.png */; };
+		47B0B80F24CAA8ED00381879 /* アイコン40.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B0B80E24CAA8ED00381879 /* アイコン40.png */; };
 		47F32888247CDEF40051AF47 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F32887247CDEF40051AF47 /* ColorCell.swift */; };
 		47F3288A247CEF250051AF47 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F32889247CEF250051AF47 /* Tab.swift */; };
 		47F3288C247CF0A50051AF47 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3288B247CF0A50051AF47 /* MainList.swift */; };
@@ -87,8 +87,6 @@
 		474BF5F524854B870003C366 /* アイコン120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン120.png"; sourceTree = "<group>"; };
 		474BF5F624854B870003C366 /* アイコン67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン67.png"; sourceTree = "<group>"; };
 		474BF5FD24854C860003C366 /* アイコン87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン87.png"; sourceTree = "<group>"; };
-		474BF5FE24854C860003C366 /* アイコン40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アイコン40.png"; path = "../../../いろいろ一時的におくやつ/アイコン40.png"; sourceTree = "<group>"; };
-		474BF60124854CEF0003C366 /* アイコン60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アイコン60.png"; path = "../../../いろいろ一時的におくやつ/アイコン60.png"; sourceTree = "<group>"; };
 		474BF60324854D320003C366 /* アイコン1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン1024.png"; sourceTree = "<group>"; };
 		4753F7862473B1FB00564746 /* ColorDesignApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorDesignApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4753F7892473B1FB00564746 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +111,8 @@
 		476A010F247891B300982DD9 /* EnvironmentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentClass.swift; sourceTree = "<group>"; };
 		477EE2E0247BC5E400BE6BDD /* ColorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorValue.swift; sourceTree = "<group>"; };
 		477EE2E2247BCA4800BE6BDD /* MunsellColorTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunsellColorTable.swift; sourceTree = "<group>"; };
+		47B0B80C24CAA8E100381879 /* アイコン60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン60.png"; sourceTree = "<group>"; };
+		47B0B80E24CAA8ED00381879 /* アイコン40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アイコン40.png"; sourceTree = "<group>"; };
 		47F32887247CDEF40051AF47 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		47F32889247CEF250051AF47 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		47F3288B247CF0A50051AF47 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
@@ -241,11 +241,11 @@
 			isa = PBXGroup;
 			children = (
 				474BF5EF248549AC0003C366 /* アイコン.png */,
-				474BF5FE24854C860003C366 /* アイコン40.png */,
 				474BF5FD24854C860003C366 /* アイコン87.png */,
 				474BF5F124854B870003C366 /* アイコン58.png */,
-				474BF60124854CEF0003C366 /* アイコン60.png */,
+				47B0B80E24CAA8ED00381879 /* アイコン40.png */,
 				474BF5F624854B870003C366 /* アイコン67.png */,
+				47B0B80C24CAA8E100381879 /* アイコン60.png */,
 				474BF5F324854B870003C366 /* アイコン80.png */,
 				474BF5F524854B870003C366 /* アイコン120.png */,
 				474BF60324854D320003C366 /* アイコン1024.png */,
@@ -361,7 +361,6 @@
 				4753F79F2473B29C00564746 /* R.json in Resources */,
 				47F328C92482326C0051AF47 /* 7.5BG.jpg in Resources */,
 				47F328C62482326C0051AF47 /* 10YR.jpg in Resources */,
-				474BF60224854CEF0003C366 /* アイコン60.png in Resources */,
 				47F328D72482326C0051AF47 /* 10R.jpg in Resources */,
 				47F328D42482326C0051AF47 /* 5G.jpg in Resources */,
 				4753F7962473B1FE00564746 /* LaunchScreen.storyboard in Resources */,
@@ -387,6 +386,7 @@
 				47F328C22482326C0051AF47 /* 2.5B.jpg in Resources */,
 				474BF5F724854B870003C366 /* アイコン58.png in Resources */,
 				47F328D32482326C0051AF47 /* 2.5G.jpg in Resources */,
+				47B0B80D24CAA8E100381879 /* アイコン60.png in Resources */,
 				47F328BD2482326C0051AF47 /* 10BG.jpg in Resources */,
 				4753F7C22475009000564746 /* GY.json in Resources */,
 				4753F7932473B1FE00564746 /* Preview Assets.xcassets in Resources */,
@@ -402,8 +402,8 @@
 				47F328CE2482326C0051AF47 /* 2.5R.jpg in Resources */,
 				47F328D62482326C0051AF47 /* 5PB.jpg in Resources */,
 				47F328BE2482326C0051AF47 /* 7.5PB.jpg in Resources */,
-				474BF60024854C860003C366 /* アイコン40.png in Resources */,
 				4753F7902473B1FE00564746 /* Assets.xcassets in Resources */,
+				47B0B80F24CAA8ED00381879 /* アイコン40.png in Resources */,
 				47F328C72482326C0051AF47 /* 5R.jpg in Resources */,
 				4753F7C6247547C500564746 /* BG.json in Resources */,
 				474BF5FB24854B870003C366 /* アイコン120.png in Resources */,
