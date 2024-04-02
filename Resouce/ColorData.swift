@@ -9,17 +9,24 @@ import Foundation
 import SwiftUI
 import UIKit
 
-let ColorDataR: [colorData] = load("R.json")
-let ColorDataYR: [colorData] = load("YR.json")
-let ColorDataY: [colorData] = load("Y.json")
-let ColorDataGY: [colorData] = load("GY.json")
-let ColorDataG: [colorData] = load("G.json")
-let ColorDataBG: [colorData] = load("BG.json")
-let ColorDataB: [colorData] = load("B.json")
-let ColorDataPB: [colorData] = load("PB.json")
+let ColorDataR: [ColorData] = load("R.json")
+let ColorDataYR: [ColorData] = load("YR.json")
+let ColorDataY: [ColorData] = load("Y.json")
+let ColorDataGY: [ColorData] = load("GY.json")
+let ColorDataG: [ColorData] = load("G.json")
+let ColorDataBG: [ColorData] = load("BG.json")
+let ColorDataB: [ColorData] = load("B.json")
+let ColorDataPB: [ColorData] = load("PB.json")
 
-let ColorDataArray: [String:[colorData]] = [
-    "R":ColorDataR,"YR":ColorDataYR,"Y":ColorDataY,"GY":ColorDataGY,"G":ColorDataG,"BG":ColorDataBG,"B":ColorDataB,"PB":ColorDataPB
+let colorDataArray: [String:[ColorData]] = [
+    "R":ColorDataR,
+    "YR":ColorDataYR,
+    "Y":ColorDataY,
+    "GY":ColorDataGY,
+    "G":ColorDataG,
+    "BG":ColorDataBG,
+    "B":ColorDataB,
+    "PB":ColorDataPB
 ]
 
 func load<T: Decodable>(_ filename: String) -> T {

@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct colorData: Hashable, Codable, Identifiable {
+struct ColorData: Hashable, Codable, Identifiable {
     var name: String
-    fileprivate var imageName: String
+    var imageName: String
     var id: Int
     var v9: [[Int]]
     var v8: [[Int]]
@@ -23,7 +23,7 @@ struct colorData: Hashable, Codable, Identifiable {
     var v1: [[Int]]
 }
 
-extension colorData {
+extension ColorData {
     var image: Image {
         ImageStore.shared.image(name: imageName)
     }
